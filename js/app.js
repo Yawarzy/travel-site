@@ -1,10 +1,14 @@
 // Mobile Menu
 const hamburger = document.getElementById("hamburger");
+const close = document.getElementById("close");
 const mainNav = document.getElementById("main-nav");
 
 hamburger.addEventListener("click", () => {
-    mainNav.classList.toggle("show-nav");
-    hamburger.classList.toggle("show-burger");
+    mainNav.classList.add("show-nav");
+})
+
+close.addEventListener("click", () => {
+    mainNav.classList.remove("show-nav");
 })
 
 // Image Slider
