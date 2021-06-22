@@ -42,11 +42,13 @@ img {
 }
 
 .logo {
+  color: #444;
   font-size: 2.5em;
   font-family: "Oswald", sans-serif;
   font-weight: 500;
   letter-spacing: 5px;
   cursor: pointer;
+  z-index: 11;
 }
 
 .hamburger {
@@ -54,6 +56,7 @@ img {
   cursor: pointer;
   border: none;
   background: transparent;
+  z-index: 11;
 }
 
 .hamburger:focus {
@@ -65,7 +68,7 @@ img {
   height: 3px;
   border-radius: 5px;
   margin-bottom: 5px;
-  background-color: #333;
+  background-color: #444;
   -webkit-transition: -webkit-transform 300ms;
   transition: -webkit-transform 300ms;
   transition: transform 300ms;
@@ -74,10 +77,6 @@ img {
 
 .hamburger .line:last-child {
   margin-bottom: 0;
-}
-
-.close {
-  display: none;
 }
 
 .show-burger .line1 {
@@ -103,7 +102,7 @@ img {
 }
 
 .nav-link {
-  color: #333;
+  color: #444;
   font-size: 1.2rem;
   letter-spacing: -40;
   -webkit-transition: color 200ms ease;
@@ -129,23 +128,14 @@ img {
   .hamburger {
     display: block;
   }
-  .close {
-    display: block;
-    color: #f4f4f4;
-    font-size: 1.5rem;
-    position: absolute;
-    top: 1em;
-    right: 1em;
-    cursor: pointer;
-  }
-  .main-nav {
+  .main-nav.flex {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -154,14 +144,17 @@ img {
     left: 0;
     right: 0;
     z-index: 10;
-    background: black;
-    height: 100vh;
+    background: #fff;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
     opacity: 0;
     pointer-events: none;
     -webkit-transform: translateY(-50px);
             transform: translateY(-50px);
     -webkit-transition: all 500ms ease;
     transition: all 500ms ease;
+    padding-top: 5em;
   }
   .main-nav.show-nav {
     opacity: 1;
@@ -173,12 +166,23 @@ img {
     margin-right: 0;
     width: 100%;
     padding: 0.5em 1em;
+    border-top: 1px solid #f4f4f4;
+    cursor: pointer;
+    -webkit-transition: background 0.4s ease-in-out;
+    transition: background 0.4s ease-in-out;
+  }
+  .nav-item:hover, .nav-item:active {
+    background-color: #e1341e;
+  }
+  .nav-item:hover > a, .nav-item:active > a {
+    color: #f4f4f4;
   }
   .nav-link {
     font-size: 1.25rem;
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
     color: #f4f4f4;
+    color: #444;
   }
 }
 
