@@ -183,8 +183,8 @@ img {
 }
 
 .showcase {
-  max-height: 62vh;
-  min-height: 62vh;
+  max-height: 27em;
+  min-height: 27em;
   overflow: hidden;
   position: relative;
 }
@@ -192,8 +192,8 @@ img {
 .showcase::before {
   content: "";
   width: 100vw;
-  max-height: 62vh;
-  min-height: 62vh;
+  max-height: 27em;
+  min-height: 27em;
   position: absolute;
   top: 0;
   left: 0;
@@ -204,14 +204,14 @@ img {
 
 .carousel-container {
   width: 100vw;
-  max-height: 62vh;
-  min-height: 62vh;
+  max-height: 27em;
+  min-height: 27em;
 }
 
 .carousel-slide {
   width: inherit;
-  max-height: 62vh;
-  min-height: 62vh;
+  max-height: 27em;
+  min-height: 27em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
