@@ -68,32 +68,51 @@
       </div>
 
       <!-- Showcase text -->
-      <div class="container">
+      <div class="showcase-content">
         <div class="showcase-text">
-          <h1 class="hero-heading">
-            Enjoy <span>Your</span> Holiday With Our <span>Agency</span>
-          </h1>
-          <ul class="hero-list">
-            <li>
-              <i class="fas fa-star"></i>
-              <span>
-                Spectacular Thing To Do <br />
-                Best Places To See</span
-              >
-            </li>
-            <li>
-              <i class="fas fa-star"></i>
-              <span>Local Guide Available</span>
-            </li>
-            <li>
-              <i class="fas fa-star"></i>
-              <span
-                >All Inclusive Family Holiday <br />
-                For All Seasons</span
-              >
-            </li>
-          </ul>
-          <a href="#" class="btn btn-primary">Book a call</a>
+          <div class="container flex">
+            <div>
+              <h1 class="hero-heading">
+                Enjoy <span>Your</span> Holiday With Our <span>Agency</span>
+              </h1>
+              <ul class="hero-list">
+                <li>
+                  <span
+                    ><i class="fas fa-star"></i> Spectacular Thing To Do Best
+                    Places To See</span
+                  >
+                </li>
+                <li>
+                  <span><i class="fas fa-star"></i> Local Guide Available</span>
+                </li>
+                <li>
+                  <span
+                    ><i class="fas fa-star"></i> All Inclusive Family Holiday
+                    For All Seasons</span
+                  >
+                </li>
+              </ul>
+              <a href="#" class="btn btn-secondary">Explore Now!</a>
+            </div>
+            <div class="showcase-card card">
+              <h3>Get a call from us</h3>
+              <form action="contact.php" method="POST">
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input type="text" />
+                </div>
+                <div class="form-group">
+                  <label for="contactNumber">Contact Number</label>
+                  <input type="tel" />
+                </div>
+                <input
+                  type="submit"
+                  value="Book Now"
+                  class="btn btn-secondary"
+                />
+              </form>
+            </div>
+          </div>
         </div>
       </div>
     </header>

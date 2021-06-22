@@ -42,7 +42,7 @@ img {
 }
 
 .logo {
-  font-size: 2em;
+  font-size: 2.5em;
   font-family: "Oswald", sans-serif;
   font-weight: 500;
   letter-spacing: 5px;
@@ -105,7 +105,7 @@ img {
 .nav-link {
   color: #333;
   font-size: 1.2rem;
-  font-weight: bold;
+  letter-spacing: -40;
   -webkit-transition: color 200ms ease;
   transition: color 200ms ease;
 }
@@ -118,16 +118,16 @@ img {
   text-decoration: underline;
 }
 
-@media only screen and (max-width: 688px) {
+@media only screen and (max-width: 768px) {
   .navbar {
     padding-right: 1em;
     padding-left: 1em;
   }
+  .logo {
+    font-size: 2em;
+  }
   .hamburger {
     display: block;
-    -ms-flex-item-align: stretch;
-        -ms-grid-row-align: stretch;
-        align-self: stretch;
   }
   .close {
     display: block;
@@ -198,7 +198,7 @@ img {
   top: 0;
   left: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
   z-index: 1;
 }
 
@@ -231,19 +231,27 @@ img {
   bottom: 10%;
 }
 
-.showcase-text {
+.showcase-content {
   position: absolute;
-  top: 10%;
-  left: 0;
-  padding: 0 1em;
-  color: #f4f4f4;
+  top: 12%;
+  width: 100%;
   z-index: 2;
 }
 
+.showcase-text {
+  padding: 0 1em;
+  color: #f4f4f4;
+}
+
 .showcase-text a.btn {
-  color: #333;
   font-size: 1.2rem;
   margin-top: 0.7em;
+}
+
+.showcase-text .container {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .hero-heading span {
@@ -257,6 +265,72 @@ img {
 .hero-list li {
   margin: 0.25em 0;
   padding: 0.25em 0;
+}
+
+.hero-list li span {
+  display: inline-block;
+  max-width: 30ch;
+}
+
+.showcase-card {
+  display: none;
+}
+
+@media only screen and (min-width: 769px) {
+  .showcase-content {
+    top: 10%;
+  }
+  .hero-heading {
+    font-size: 2.5rem;
+    width: 20ch;
+  }
+  .hero-list li {
+    font-size: 1em;
+  }
+  .showcase-card {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #f4f4f4;
+    position: relative;
+    left: -10%;
+  }
+  .showcase-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5em;
+    font-weight: 400;
+  }
+  .showcase-card .form-group {
+    padding: 1em 0;
+    margin: 0.25em 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .showcase-card input[type="text"],
+  .showcase-card input[type="tel"] {
+    border: none;
+    border-bottom: 1px solid #f4f4f4;
+    padding: 0.2em 0;
+    background: transparent;
+    font-size: 1.2rem;
+    color: #f4f4f4;
+    font-family: inherit;
+  }
+  .showcase-card input[type="text"]:focus,
+  .showcase-card input[type="tel"]:focus {
+    outline: none;
+  }
+  .showcase-card .btn {
+    width: 100%;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-top: 0.2em;
+    font-family: inherit;
+  }
 }
 
 .container {
@@ -286,6 +360,11 @@ img {
 
 .btn-secondary {
   background-color: #e1341e;
+  color: #f4f4f4;
+}
+
+.btn-secondary:hover, .btn-secondary:active {
+  background-color: #ca301c;
 }
 
 .flex {
@@ -298,4 +377,24 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card {
+  width: 22em;
+  height: auto;
+  padding: 2em;
+  -webkit-box-shadow: 0 0 5px -10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 5px -10px rgba(0, 0, 0, 0.5);
+  border-radius: 0.5em;
 }
