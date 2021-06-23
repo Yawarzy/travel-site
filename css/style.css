@@ -174,7 +174,8 @@ img {
   .nav-item:hover, .nav-item:active {
     background-color: #e1341e;
   }
-  .nav-item:hover > a, .nav-item:active > a {
+  .nav-item:hover > a,
+  .nav-item:active > a {
     color: #f4f4f4;
   }
   .nav-link {
@@ -183,6 +184,13 @@ img {
     font-weight: 400;
     color: #f4f4f4;
     color: #444;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1139px) {
+  .navbar {
+    padding-right: 1em;
+    padding-left: 1em;
   }
 }
 
@@ -296,7 +304,6 @@ img {
     background-color: rgba(0, 0, 0, 0.5);
     color: #f4f4f4;
     position: relative;
-    left: -10%;
   }
   .showcase-card h3 {
     font-size: 1.5rem;
