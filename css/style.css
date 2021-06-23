@@ -197,6 +197,7 @@ img {
 .showcase {
   max-height: 27em;
   min-height: 27em;
+  width: 100vw;
   overflow: hidden;
   position: relative;
 }
@@ -210,7 +211,7 @@ img {
   top: 0;
   left: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.475);
+  background-color: rgba(0, 0, 0, 0.575);
   z-index: 1;
 }
 
