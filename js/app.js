@@ -23,7 +23,7 @@ function slide() {
     }
 }
 
-setInterval(slide, 4000);
+setInterval(slide, 3000);
 
 
 // Manual Controls For Slider
