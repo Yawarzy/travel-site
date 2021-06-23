@@ -337,6 +337,95 @@ img {
   }
 }
 
+.best-offers {
+  padding-top: 1em;
+}
+
+.best-offers h3 {
+  text-align: center;
+  font-size: 1.75rem;
+  font-weight: 400;
+  color: #444;
+}
+
+.best-offers p {
+  text-align: center;
+  color: #333;
+  font-weight: 100;
+}
+
+.best-offers .grid {
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+}
+
+.best-offer {
+  height: 18em;
+  position: relative;
+}
+
+.best-offer:first-child {
+  background: url("../images/kashmir.jpg") no-repeat center center/cover;
+}
+
+.best-offer:nth-child(2) {
+  background: url("../images/norway.jpg") no-repeat center center/cover;
+}
+
+.best-offer:last-child {
+  background: url("../images/france.jpg") no-repeat center center/cover;
+}
+
+.best-offer .flex {
+  padding: 1em;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f4f4f4;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.best-offer .flex .offer-head {
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.best-offer .flex .offer-price {
+  font-family: "Oswald", sans-serif;
+  color: #f4f4f4;
+}
+
+.best-offer .flex .offer-price span {
+  font-weight: 400;
+}
+
+.divider {
+  max-width: 20%;
+  height: 5px;
+  background-color: #1ecbe1;
+  border-radius: 5px;
+  margin: 1em auto 1.5em;
+}
+
+@media only screen and (min-width: 769px) {
+  .best-offers .grid {
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+  .divider {
+    max-width: 10%;
+  }
+}
+
 .container {
   max-width: 1140px;
   margin: 0 auto;
