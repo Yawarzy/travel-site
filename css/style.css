@@ -538,6 +538,104 @@ img {
   }
 }
 
+.testimonials {
+  padding: 1em 1.75em 1.75em;
+  position: relative;
+}
+
+.testimonials::after {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 0;
+  z-index: -1;
+  width: 15%;
+  height: 100%;
+  background-color: #1ecbe1;
+}
+
+.testimonials .testimonial-card {
+  padding: 1em;
+  background-color: #f4f4f4;
+  border-radius: 0 2em;
+}
+
+.testimonials .testimonial-card .testimonial-img {
+  border-radius: 50%;
+  max-width: 120px;
+  margin: 1em auto;
+  height: 120px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.testimonials .testimonial-card .client-name {
+  text-align: right;
+  font-weight: 400;
+  font-size: 1.5rem;
+  font-family: "Oswald", sans-serif;
+}
+
+.testimonials .marker-container {
+  margin-top: 1em;
+}
+
+.testimonials .marker {
+  width: 10px;
+  height: 10px;
+  margin-right: 0.75em;
+  background-color: #f4f4f4;
+}
+
+.testimonials .marker:last-child {
+  margin-right: 0;
+}
+
+.testimonials .marker.active-marker {
+  background-color: #1ecbe1;
+}
+
+@media only screen and (min-width: 769px) {
+  .testimonials .testimonial-card {
+    max-width: 80%;
+    margin: auto;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 4fr 6fr;
+        grid-template-columns: 4fr 6fr;
+    padding: 0;
+    height: 20em;
+    gap: 1em;
+  }
+  .testimonials .testimonial-card .testimonial-img {
+    border-radius: 0;
+    border-bottom-left-radius: 2em;
+    margin: 0;
+    height: 100%;
+    max-width: 100%;
+  }
+  .testimonials .testimonial-card .testimonial-text {
+    padding: 1em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .testimonials .testimonial-card .testimonial-text p {
+    font-size: 1.2rem;
+  }
+}
+
 .container {
   max-width: 1140px;
   margin: 0 auto;
