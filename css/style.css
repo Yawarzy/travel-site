@@ -7,6 +7,7 @@
 
 html {
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -465,6 +466,69 @@ img {
   }
 }
 
+.services {
+  padding: 1em;
+  background: url("../images/ladhak.jpg") no-repeat center center/cover, rgba(255, 255, 255, 0.3);
+  background-blend-mode: overlay;
+  background-attachment: fixed;
+}
+
+.services .divider {
+  background-color: #e1341e;
+  margin-bottom: 2em;
+}
+
+.feature-container.flex {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.feature {
+  background: rgba(255, 255, 255, 0.765);
+  padding: 1em 0.5em;
+  border-radius: 0.25em;
+  margin: 1.75em;
+  color: #1e2046;
+  text-align: left;
+  position: relative;
+}
+
+.feature .feature-head.flex {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.feature i {
+  font-size: 1.5rem;
+  background: #e1341e;
+  color: #f4f4f4;
+  padding: 1em;
+  border-radius: 50%;
+  position: absolute;
+  top: -1.5em;
+}
+
+.feature h3 {
+  margin-top: 1em;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+}
+
+@media only screen and (min-width: 769px) {
+  .feature-container.flex {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
 .container {
   max-width: 1140px;
   margin: 0 auto;
@@ -485,7 +549,7 @@ img {
 
 .lead {
   color: #444;
-  font-weight: 100;
+  font-weight: 200;
   padding: 1em 0;
 }
 
