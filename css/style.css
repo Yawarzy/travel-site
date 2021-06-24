@@ -531,6 +531,9 @@ img {
         -ms-flex-direction: row;
             flex-direction: row;
   }
+  .feature {
+    margin: 0.75em;
+  }
 }
 
 .container {
