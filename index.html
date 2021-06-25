@@ -18,6 +18,9 @@
       referrerpolicy="no-referrer"
     />
 
+    <!-- AOS library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./css/style.css" />
     <title>Travello | Roam The World</title>
@@ -125,19 +128,19 @@
         <div class="divider"></div>
       </div>
       <div class="grid">
-        <div class="best-offer">
+        <div class="best-offer" data-aos="fade-left">
           <div class="flex">
             <h4 class="offer-head">Kashmir</h4>
             <h4 class="offer-price">$500 ~ <span>7 days</span></h4>
           </div>
         </div>
-        <div class="best-offer">
+        <div class="best-offer" data-aos="fade-right">
           <div class="flex">
             <h4 class="offer-head">Jammu</h4>
             <h4 class="offer-price">$ 300 ~ <span>5 days</span></h4>
           </div>
         </div>
-        <div class="best-offer">
+        <div class="best-offer" data-aos="fade-left">
           <div class="flex">
             <h4 class="offer-head">Ladhak</h4>
             <h4 class="offer-price">$400 ~ <span>7 days</span></h4>
@@ -154,7 +157,7 @@
       <div class="divider"></div>
       <div class="container">
         <div class="flex">
-          <div class="destination-card flex">
+          <div class="destination-card flex" data-aos="fade-right">
             <div class="destination-img">
               <img src="./images/gulmarg.jpg" alt="" />
             </div>
@@ -169,7 +172,7 @@
             </div>
           </div>
 
-          <div class="destination-card flex">
+          <div class="destination-card flex" data-aos="fade-left">
             <div class="destination-img">
               <img src="./images/sonamarg.jpg" alt="" />
             </div>
@@ -184,7 +187,7 @@
             </div>
           </div>
 
-          <div class="destination-card flex">
+          <div class="destination-card flex" data-aos="fade-right">
             <div class="destination-img">
               <img src="./images/pehalgam.jpg" alt="" />
             </div>
@@ -210,7 +213,7 @@
         <p class="section-subtitle">Multiple benefits included</p>
         <div class="divider"></div>
         <div class="feature-container flex">
-          <div class="feature">
+          <div class="feature" data-aos="fade-left">
             <div class="feature-head flex">
               <i class="fas fa-hotel"></i>
               <h3>Hand Picked Hotels</h3>
@@ -223,7 +226,7 @@
             </div>
           </div>
 
-          <div class="feature">
+          <div class="feature" data-aos="fade-right">
             <div class="feature-head flex">
               <i class="fas fa-utensils"></i>
               <h3>Fabulous Food</h3>
@@ -236,7 +239,7 @@
             </div>
           </div>
 
-          <div class="feature">
+          <div class="feature" data-aos="fade-left">
             <div class="feature-head flex">
               <i class="fas fa-people-arrows"></i>
               <h3>Experienced Guide</h3>
@@ -259,7 +262,7 @@
         <h4 class="section-title">What They Say</h4>
         <p class="section-subtitle">Listen to what our clients say</p>
         <div class="divider"></div>
-        <div class="testimonial-card">
+        <div class="testimonial-card" data-aos="fade-right">
           <div class="testimonial-img"></div>
           <div class="testimonial-text">
             <p class="lead">
@@ -286,7 +289,7 @@
         <h4 class="section-title">Contact Us</h4>
         <p class="section-subtitle">Let's know your thoughts</p>
         <div class="divider"></div>
-        <div class="contact-form-wrapper">
+        <div class="contact-form-wrapper" data-aos="fade-left">
           <div class="contact-img"></div>
           <form class="contact-form">
             <div class="form-group">
@@ -337,6 +340,16 @@
     </section>
     <!-- Contact Section End -->
 
+    <!-- AOS Library -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 400,
+        duration: 1000,
+      });
+    </script>
+
+    <!-- Custom JS -->
     <script src="./js/app.js"></script>
   </body>
 </html>

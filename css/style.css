@@ -697,7 +697,7 @@ img {
   margin-bottom: 0.7em;
 }
 
-.form-group input:not(input[type="submit"]) {
+.form-group input {
   padding: 0.5em 0;
   border: none;
   border-bottom: 1px solid #f4f4f4;
@@ -707,7 +707,7 @@ img {
   width: 100%;
 }
 
-.form-group input:not(input[type="submit"]):focus {
+.form-group input:focus {
   outline: none;
 }
 
@@ -733,6 +733,15 @@ img {
   font-size: 1.2rem;
   color: #444;
   font-weight: 100;
+}
+
+.form-group input[type="submit"]:focus {
+  outline: none;
+}
+
+.form-group input[type="submit"]:hover, .form-group input[type="submit"]:active {
+  color: #1ecbe1;
+  border-color: #1ecbe1;
 }
 
 @media only screen and (min-width: 768px) {
