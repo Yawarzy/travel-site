@@ -491,9 +491,7 @@ img {
   border-radius: 0.25em;
   margin: 1.75em 0;
   color: #1e2046;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  max-height: 15em;
   position: relative;
 }
 
