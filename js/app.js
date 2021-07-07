@@ -74,20 +74,3 @@ function loadTestimonial() {
 
 loadTestimonial();
 setInterval(loadTestimonial, 3000);
-
-// Manual Controls For Slider
-// const nextBtn = document.getElementById("next-btn");
-// const prevBtn = document.getElementById("prev-btn");
-
-// nextBtn.addEventListener("click", () => {
-//     if (counter < imgs.length) {
-//         carouselSlide.style.transform = `translateX(${+(-100 * counter)}vw)`;
-//         counter++;
-//     }
-// })
-
-// prevBtn.addEventListener("click", () => {
-//     counter--;
-//     if (counter <= 0) return;
-//     carouselSlide.style.transform = `translateX(${+(-100 * counter)}vw)`;
-// })

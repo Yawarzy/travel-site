@@ -83,10 +83,6 @@
           />
         </div>
       </div>
-      <!-- <div class="slider-btns"> -->
-      <!-- <button id="next-btn">next</button>
-        <button id="prev-btn">prev</button> -->
-      <!-- </div> -->
 
       <!-- Showcase text -->
       <div class="showcase-content">
@@ -117,7 +113,7 @@
             </div>
             <div class="showcase-card card">
               <h3>Get a call from us</h3>
-              <form action="contact.php" method="POST">
+              <form name="book-a-call" data-netlify="true" method="POST">
                 <div class="form-group">
                   <label for="name">Name</label>
                   <input type="text" placeholder="Enter your name" />
@@ -147,24 +143,45 @@
         <div class="divider"></div>
       </div>
       <div class="grid">
-        <div class="best-offer" data-aos="fade-left">
-          <div class="flex">
-            <h4 class="offer-head">Kashmir</h4>
-            <h4 class="offer-price">$500 ~ <span>7 days</span></h4>
+        <a
+          href="https://en.wikipedia.org/wiki/Kashmir"
+          class="best-offer-link"
+          target="_blank"
+          data-aos="fade-left"
+        >
+          <div class="best-offer">
+            <div class="flex">
+              <h4 class="offer-head">Kashmir</h4>
+              <h4 class="offer-price">$500 ~ <span>7 days</span></h4>
+            </div>
           </div>
-        </div>
-        <div class="best-offer" data-aos="fade-right">
-          <div class="flex">
-            <h4 class="offer-head">Jammu</h4>
-            <h4 class="offer-price">$ 300 ~ <span>5 days</span></h4>
+        </a>
+        <a
+          href="https://en.wikipedia.org/wiki/Jammu"
+          class="best-offer-link"
+          target="_blank"
+          data-aos="fade-right"
+        >
+          <div class="best-offer">
+            <div class="flex">
+              <h4 class="offer-head">Jammu</h4>
+              <h4 class="offer-price">$ 300 ~ <span>5 days</span></h4>
+            </div>
           </div>
-        </div>
-        <div class="best-offer" data-aos="fade-left">
-          <div class="flex">
-            <h4 class="offer-head">Ladhak</h4>
-            <h4 class="offer-price">$400 ~ <span>7 days</span></h4>
+        </a>
+        <a
+          href="https://en.wikipedia.org/wiki/Ladhak"
+          class="best-offer-link"
+          target="_blank"
+          data-aos="fade-left"
+        >
+          <div class="best-offer">
+            <div class="flex">
+              <h4 class="offer-head">Ladhak</h4>
+              <h4 class="offer-price">$400 ~ <span>7 days</span></h4>
+            </div>
           </div>
-        </div>
+        </a>
       </div>
     </section>
     <!-- Best Offers End -->
@@ -183,11 +200,18 @@
             <div class="destination-text">
               <h4>Gulmarg</h4>
               <p class="lead">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Placeat molestiae dolorem dolor natus accusantium autem
-                corporis, velit alias suscipit reiciendis, commodi iure hic
-                nobis nihil dolore cum voluptatum in. Voluptate!
+                Yousuf Shah Chak, who ruled Kashmir from 1579 to 1586,
+                frequented the place with his queen Habba Khatoon and renamed it
+                'Gulmarg' ("meadow of flowers"). Wild flowers of 21 different
+                varieties were collected by the Mughal emperor Jahangir for his
+                gardens in Gulmarg.
               </p>
+              <a
+                href="https://en.wikipedia.org/wiki/Gulmarg"
+                class="btn btn-outline"
+                target="_blank"
+                >Read More</a
+              >
             </div>
           </div>
 
@@ -201,11 +225,17 @@
             <div class="destination-text">
               <h4>Sonamarg</h4>
               <p class="lead">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Voluptatum exercitationem illo ad dolore tempore at similique
-                optio aperiam, perspiciatis maxime eaque dolores accusantium
-                mollitia earum, dolorum molestias ab, doloremque officia?
+                The hill station is situated in the Kashmir Valley, at an
+                altitude of 2,730 metres (8,960 ft) and is close to some of the
+                valley's tallest peaks, alongside the Machoi Glacier, Sirbal
+                Peak, Kolahoi Peak, Amarnath Peak and Machoi Peak.
               </p>
+              <a
+                href="https://en.wikipedia.org/wiki/Sonamarg"
+                class="btn btn-outline"
+                target="_blank"
+                >Read More</a
+              >
             </div>
           </div>
 
@@ -219,11 +249,17 @@
             <div class="destination-text">
               <h4>Pehalgam</h4>
               <p class="lead">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Excepturi quam quisquam, autem ex, quibusdam minus nulla
-                temporibus accusamus ipsa mollitia aliquid qui provident quidem
-                culpa, itaque illum a! Labore, corrupti.
+                t is a popular tourist destination and hill station. Its lush
+                green meadows and pristine waters attract thousands of tourists
+                from all over the world each year.Pahalgam is associated with
+                the annual pilgrimage to the shrine Amarnath Yatra.
               </p>
+              <a
+                href="https://en.wikipedia.org/wiki/Pehalgam"
+                class="btn btn-outline"
+                target="_blank"
+                >Read More</a
+              >
             </div>
           </div>
         </div>
@@ -316,7 +352,12 @@
         <div class="divider"></div>
         <div class="contact-form-wrapper" data-aos="fade-left">
           <div class="contact-img"></div>
-          <form class="contact-form">
+          <form
+            class="contact-form"
+            method="POST"
+            name="main-contact-form"
+            data-netlify="true"
+          >
             <div class="form-group">
               <label for="name">Name <span class="required">*</span></label>
               <input

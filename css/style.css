@@ -323,10 +323,13 @@ img {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .showcase-card .form-group label {
+    color: #ccc;
+  }
   .showcase-card input[type="text"],
   .showcase-card input[type="tel"] {
     border: none;
-    border-bottom: 1px solid #f4f4f4;
+    border-bottom: 1px solid #444;
     padding: 0.2em 0;
     background: transparent;
     font-size: 1.2rem;
@@ -357,24 +360,24 @@ img {
       grid-template-rows: repeat(3, 1fr);
 }
 
-.best-offer {
+.best-offer-link:first-child {
+  background: url("../images/kashmir.jpg") no-repeat center center/cover;
+}
+
+.best-offer-link:nth-child(2) {
+  background: url("../images/norway.jpg") no-repeat center center/cover;
+}
+
+.best-offer-link:last-child {
+  background: url("../images/leh.jpg") no-repeat center center/cover;
+}
+
+.best-offer-link .best-offer {
   height: 18em;
   position: relative;
 }
 
-.best-offer:first-child {
-  background: url("../images/kashmir.jpg") no-repeat center center/cover;
-}
-
-.best-offer:nth-child(2) {
-  background: url("../images/norway.jpg") no-repeat center center/cover;
-}
-
-.best-offer:last-child {
-  background: url("../images/leh.jpg") no-repeat center center/cover;
-}
-
-.best-offer .flex {
+.best-offer-link .best-offer .flex {
   padding: 1em;
   position: absolute;
   bottom: 0;
@@ -387,18 +390,18 @@ img {
           justify-content: space-between;
 }
 
-.best-offer .flex .offer-head {
+.best-offer-link .best-offer .flex .offer-head {
   font-family: "Oswald", sans-serif;
   font-weight: 700;
   letter-spacing: 2px;
 }
 
-.best-offer .flex .offer-price {
+.best-offer-link .best-offer .flex .offer-price {
   font-family: "Oswald", sans-serif;
   color: #f4f4f4;
 }
 
-.best-offer .flex .offer-price span {
+.best-offer-link .best-offer .flex .offer-price span {
   font-weight: 400;
 }
 
@@ -453,6 +456,10 @@ img {
   }
   .destination-card.flex .destination-img {
     width: 40%;
+    height: 100%;
+  }
+  .destination-card.flex .destination-img img {
+    height: 100%;
   }
   .destination-card.flex .destination-text {
     width: 60%;
@@ -885,8 +892,15 @@ img {
   outline: none;
   padding: 0.5em 1.25em;
   color: #f4f4f4;
-  -webkit-transition: background 0.4s ease;
-  transition: background 0.4s ease;
+  -webkit-transition: background 0.4s ease, -webkit-transform 0.4s ease;
+  transition: background 0.4s ease, -webkit-transform 0.4s ease;
+  transition: background 0.4s ease, transform 0.4s ease;
+  transition: background 0.4s ease, transform 0.4s ease, -webkit-transform 0.4s ease;
+}
+
+.btn:active, .btn:hover {
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
 }
 
 .btn-primary {
@@ -904,6 +918,17 @@ img {
 
 .btn-secondary:hover, .btn-secondary:active {
   background-color: #ca301c;
+}
+
+.btn-outline {
+  border: 1px solid #ddd;
+  border-radius: 0;
+  color: #444;
+}
+
+.btn-outline:active, .btn-outline:hover {
+  border-color: #1ecbe1;
+  background: #1ecbe1;
 }
 
 .flex {
