@@ -430,8 +430,14 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-bottom: 0.5em;
+  margin-bottom: 1em;
+  border: 1px solid #e4e4e4;
   overflow: hidden;
+}
+
+.destination-card.flex .destination-text {
+  padding: 0 0.5em;
+  padding-bottom: 0.75em;
 }
 
 .destination-card.flex .destination-text h4 {
@@ -450,9 +456,9 @@ img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-bottom: 0.5em;
     gap: 0.5em;
     height: 15em;
-    border: 1px solid #e4e4e4;
   }
   .destination-card.flex .destination-img {
     width: 40%;
